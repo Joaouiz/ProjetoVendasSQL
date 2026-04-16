@@ -20,7 +20,7 @@ A ideia principal foi entender na prática como um mesmo problema pode ser resol
 
 ## Objetivo
 
-- praticar SQL na prática  
+- dar aquela praticada em SQL
 - entender consultas analíticas  
 - comparar PostgreSQL com BigQuery  
 - estruturar um backend simples em Java  
@@ -71,16 +71,43 @@ Isso permitiu comparar sintaxe, performance e comportamento das consultas.
 
 ---
 
-## Aprendizados
+## Dados utilizados
 
-- escrita de SQL mais analítico (GROUP BY, JOIN, agregações)  
-- estruturação de APIs com Spring Boot  
-- manipulação de dados vindos do banco em Java  
-- diferenças entre bancos relacionais e data warehouse  
-- problemas reais de tipos de dados e conversões  
+[clientes](https://github.com/user-attachments/files/26799921/clientes_202604160557.csv)
+
+[itens_pedido](https://github.com/user-attachments/files/26799933/itens_pedido_202604160557.csv)
+
+[pedidos](https://github.com/user-attachments/files/26799955/pedidos_202604160557.csv)
+
+[produtos](https://github.com/user-attachments/files/26799948/produtos_202604160557.csv)
 
 ---
 
-## Como executar o projeto
+## Resultados
 
-(Adicionar aqui depois os passos de execução do Spring Boot e banco de dados)
+As imagens abaixo representam o retorno da implementação do sistema que classifica os clientes de acordo com o valor gasto na empresa.
+
+***Local:***
+
+![Ranking de Clientes Local](images/rankingLocal.png)
+
+
+***BigQuery:***
+
+![Ranking de Clientes Cloud](images/rankingBigQuery.png)
+
+
+As próximas imagens sao do sistema que calcula o faturamento mensal da empresa 
+
+***Local:***
+
+![Faturamento Local](images/faturamentoLocal.png)
+
+***BigQuery:***
+
+![Faturamento Cloud](images/faturamentoBigQuery.png)
+
+
+Nelas podemos perceber que o retorno foi o mesmo, logo, assumimos que a implementacao de ambas está correta.
+
+---
